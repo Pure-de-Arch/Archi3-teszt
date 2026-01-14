@@ -127,18 +127,8 @@ xfsprogs
 xl2tpd
 zsh
 
-
-# everything above comes from archiso releng folder
-#######################################################
-###                    ALCI                         ###
-#######################################################
-
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
-
-alci-dwm
+### alci/calamares installer
+#alci-dwm
 #alci-dwm-nemesis
 alci-calamares
 #alci-calamares-dev
@@ -152,10 +142,7 @@ alci-calamares-config
 #alci-calamares-config-zen
 xterm
 
-#######################################################
-###      PACKAGES THAT STAY AFTER INSTALLATION      ###
-#######################################################
-
+###      PACKAGES THAT STAY AFTER INSTALLATION      ###geany
 sddm
 bash-completion
 os-prober
@@ -168,108 +155,38 @@ xorg-xrdb
 mkinitcpio-openswap
 
 ##### you can also use nmtui from the terminal
-#networkmanager
-#network-manager-applet
+networkmanager
+network-manager-applet
 
-#######################################################
-###                    EXTRAS                       ###
-#######################################################
-
-##### xorg applications
-
-#xorg-server
-#xorg-apps
-#neofetch
-
-
-##### Drivers for graphical cards
-
-#driver for virtualbox - xf86-video-vmware is dependency
-#systemctl enable vboxservice
-#systemctl start vboxservice
-#to have fullscreen
-#virtualbox-guest-utils
-
-#xf86-video-intel
-#xf86-video-amdgpu
-#xf86-video-nouveau
-
-#nvidia
-#nvidia-settings
-#nvidia-utils
-
-
-
-##### lightdm display manager
-
-#lightdm
-#lightdm-gtk-greeter
-
-##### sddm display manager
-
-#sddm
-#alci-sddm-plasma-archpaint
-
-##### gdm display manager
-
-#gdm
-
-
-
-##### want to have base-devel group
-
-#base-devel
-
-##### want to have linux-headers
-
-#linux-headers
-
-
-
-##### want to have a desktop
-
-#test
-#xfce4
-#xfce4-goodies
-#neofetch
-
-
-##### want to add/use the ArcoLinux repos
-
-#arcolinux-mirrorlist-git
-#arcolinux-keyring
-
-#test
-#arcolinux-wallpapers-git
-
-##### want to add/use the Chaotic repo
-
-#chaotic-mirrorlist
-#chaotic-keyring
-
-#test
-#colloid-cursors-git
-
-
-##### want to add/use your local repo packages
-##### create your packages and put them in the local repo
-
-#There is a copy of the local repo in your folder
-#Copy/paste it to your homefolder
-#Change the name erik to your own username
-#update the database
-
-#test
-#nemesis-wallpapers
-
-
-#### want have a btrfs format
-#### use alci-calamares-config-btrfs 
-
-#timeshift
-#grub-btrfs
-#timeshift-autosnap
 git
 
-#grub theme
-alci-grub-theme-git
+# Bootsplash/boot animation
+plymouth
+
+## Xorg/Wayland
+xorg
+xorg-drivers
+xorg-fonts
+
+### Display Manager
+
+### Desktop
+i3
+dmenu
+
+### On-ISO drivers
+nvidia-dkms
+
+### Fonts
+noto-fonts
+noto-fonts-emoji
+
+## Background and services
+pipewire
+pipewire-pulse
+pipewire-jack
+pipewire-alsa
+wireplumber
+
+### Spice
+spice-vdagent
