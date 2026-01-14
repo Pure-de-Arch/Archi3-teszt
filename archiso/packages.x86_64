@@ -170,9 +170,6 @@ xorg-fonts
 
 ### Display Manager
 
-### Desktop
-i3
-dmenu
 
 ### On-ISO drivers
 nvidia-dkms
@@ -190,3 +187,7 @@ wireplumber
 
 ### Spice
 spice-vdagent
+
+### Desktop
+i3
+dmenu
